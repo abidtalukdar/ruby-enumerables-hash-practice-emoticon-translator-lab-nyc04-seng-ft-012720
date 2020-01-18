@@ -7,8 +7,7 @@ def load_library(file)
     emoticons_translator["get_emoticon"][emoticons[key][0]] = emoticons[key][1]
     emoticons_translator["get_meaning"][emoticons[key][1]] = key
   end  
-  return emoticons_translator
-  pp emoticons_translator
+  return emoticons
 end
 
 def get_japanese_emoticon(file, emoticon)
@@ -33,8 +32,7 @@ def get_english_meaning(file, emoticon)
   return "Sorry, that emoticon was not found"
 end
 
-
-# pp load_library('/home/whimsical-operand-0270/ruby-enumerables-hash-practice-emoticon-translator-lab-nyc04-seng-ft-012720/lib/emoticons.yml')
+pp load_library('/home/whimsical-operand-0270/ruby-enumerables-hash-practice-emoticon-translator-lab-nyc04-seng-ft-012720/lib/emoticons.yml')
 
 # emoticons_translator = {"get_emoticon"=>
 #   {"O:)"=>"☜(⌒▽⌒)☞",
@@ -50,7 +48,7 @@ end
 #   ":'("=>"(Ｔ▽Ｔ)",
 #   ":o"=>"o_O",
 #   ";)"=>"(^_-)"},
-#   "get_meaning"=>
+# "get_meaning"=>
 #   {"☜(⌒▽⌒)☞"=>"angel",
 #   "ヽ(ｏ`皿′ｏ)ﾉ"=>"angry",
 #   "(ΘεΘ;)"=>"bored",
